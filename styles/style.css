@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* 设置字体为 Arial，后备字体为 sans-serif */
+    background-color: purple;
+    color: black;
+    margin: 0;
+    /*移除页面的默认外边距*/
+    padding: 200px;
+    /*为页面内容添加内边距*/
+}
+
+button {
+    background-color: green;
+    /*按钮的背景颜色*/
+    color: #fff;
+    /*按钮的颜色*/
+    border: none;
+    /*按钮没有边框，显得更加简洁*/
+    cursor: pointer;
+    /*用户悬停在按钮上的时候，鼠标变成手型，提示可以交互*/
+    transition: background-color 1s;
+    /*定义按钮背景颜色发生变化时，颜色会以平滑的方式过渡*/
+}
+
+form {
+    display: flex;
+    /*表单中的子元素会按照flexBox来排列*/
+    flex-direction: column;
+    /*排列方向为纵向，从上倒下来排列*/
+    gap: 10px;
+    /*表单元素间距之间为10像素*/
+}
+
+label {
+    font-weight: bold;
+    /*加粗*/
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    /*内边距为10像素*/
+    font-size: 1rem;
+    /*输入框，下拉框和按钮中的文字大小会与页面中的跟字体大小一致*/
+    border-radius: 5px;
+    /*输入框，下拉框，按钮的边角会变得更加圆润*/
+    border: 1px solid #ccc;
+    /*输入框，下拉框会有一个浅灰色的边框*/
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/*带点的是类选择器，即class中的*/
+.container {
+    max-width: 600px;
+    /*设置容器的最大宽度*/
+    margin: 0 auto;
+    /*设置容器的外边距*/
+    background-color: yellow;
+    /*设置容器的背景*/
+    padding: 20px;
+    /*为容器内容添加内边距*/
+    border-radius: 5px;
+    /*设置容器的圆角*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /*为容器添加阴影效果*/
+}
+
+.tabs {
+    display: flex;
+    /*默认从左到右排列*/
+    justify-content: space-around;
+    /*按钮分配等间距*/
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #dc3545;
+    padding: 10px 50px;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+button[type="reset"]:hover {
+    background-color: aqua;
+}
